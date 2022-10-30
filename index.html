@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="">
+        <!-- div for scores link and time -->
+        <div class="">
+            <!-- View highscores -->
+            <div class="">
+                <!-- <a href="">View Highscores</a> -->
+                <button id="view-high-scores" type="" class="">View High Scores</button>
+            </div>
+            <!-- Timer -->
+            <div class="">
+                <p id = "" class="">Time:50s</p>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Container for Intro, Questions, Answers -->
+        <div class="">
+            <!-- Section for H1 and Intro // Hide upon Start-->
+            <section id="home-page">
+                <div class="">
+                    <div class=""></div>
+                    <div class="">
+                        <h1 class="">Coding Quiz Challenge!</h1>
+                        <p class="">Try to answer the following javascript code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                        <button id="" type="" class="">Start Quiz</button></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section for Question and Answers // Show upon Start-->
+            <section id="all-questions" class = "all-questions">
+                <div class="row">
+                    <div class=""></div>
+                    <div class="">
+                        <h2 id="question"></h2>
+                        <ul class="">
+                            <li class=""><button id="" value="" type=""
+                                    class=""></button></li>
+                            <li class=""><button id="" value="" type=""
+                                    class=""></button></li>
+                            <li class=""><button id="" value="" type=""
+                                    class=" "></button></li>
+                            <li class=""><button id="" value="" type=""
+                                    class=""></button></li>
+                        </ul>
+                        <div id="show-answer" class="show-answer">
+                            <hr>
+                            <!-- Correct or Wrong will be added via JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section for Final Score and Name -->
+            <section id="final-page" class = "final-page">
+                <div class="row">
+                    <div class=""></div>
+                    <div class="">
+                        <h2>All done!</h2>
+                        <p>Your final score is: <span id="final-score"></span></p>
+                        <!-- <p class="score">Your final score is: </p> -->
+                        <p>Enter initials:<input placeholder="initials" id="initials" /></span>
+                            <button id="submit-score" class="">Submit</button>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section for High Scores -->
+            <section id="high-scores-page" class = "high-scores-page">
+                <div class="">
+                    <div class=""></div>
+                    <div class="">
+                            <h2>High Scores</h2>
+                            <!-- High scores should be added as a sorted desc list -->
+                            <ol id="high-scores-list"></ol>
+                            <button id="" class="">Restart</button>
+                            <button id="" class="">Clear scores</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Container Ends -->
+        </div>
+    </main>
+
+    <!-- Javascript  -->
+    <script src="script.js"></script>
+
+</body>
+</html>

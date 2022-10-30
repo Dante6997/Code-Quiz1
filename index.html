@@ -9,32 +9,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="">
+    <header class="container-fluid mb-5">
         <!-- div for scores link and time -->
-        <div class="">
+        <div class="row">
             <!-- View highscores -->
-            <div class="">
+            <div class="col-6">
                 <!-- <a href="">View Highscores</a> -->
-                <button id="view-high-scores" type="" class="">View High Scores</button>
+                <button id="view-high-scores" type="button" class="btn d-inline-block mt-1 purple">View High Scores</button>
             </div>
             <!-- Timer -->
-            <div class="">
-                <p id = "" class="">Time:50s</p>
+            <div class="col-6">
+                <p id = "timer" class="d-flex justify-content-end time">Time:50s</p>
             </div>
         </div>
     </header>
     <!-- Main Content -->
     <main>
         <!-- Container for Intro, Questions, Answers -->
-        <div class="">
+        <div class="container">
             <!-- Section for H1 and Intro // Hide upon Start-->
             <section id="home-page">
-                <div class="">
-                    <div class=""></div>
-                    <div class="">
-                        <h1 class="">Coding Quiz Challenge!</h1>
-                        <p class="">Try to answer the following javascript code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-                        <button id="" type="" class="">Start Quiz</button></p>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <h1 class="d-flex justify-content-center text-center">Coding Quiz Challenge!</h1>
+                        <p class="d-flex justify-content-center text-center">Try to answer the following javascript code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                        <button id="start" type="button" class=" btn mx-auto d-block purple">Start Quiz</button></p>
                     </div>
                 </div>
             </section>
@@ -42,18 +42,18 @@
             <!-- Section for Question and Answers // Show upon Start-->
             <section id="all-questions" class = "all-questions">
                 <div class="row">
-                    <div class=""></div>
-                    <div class="">
+                    <div class="col-3"></div>
+                    <div class="col-6">
                         <h2 id="question"></h2>
-                        <ul class="">
-                            <li class=""><button id="" value="" type=""
-                                    class=""></button></li>
-                            <li class=""><button id="" value="" type=""
-                                    class=""></button></li>
-                            <li class=""><button id="" value="" type=""
-                                    class=" "></button></li>
-                            <li class=""><button id="" value="" type=""
-                                    class=""></button></li>
+                        <ul class="px-0 py-0">
+                            <li class="mb-3"><button id="option1" value="0" type="button"
+                                    class="btn purple optionBtn"></button></li>
+                            <li class="mb-3"><button id="option2" value="1" type="button"
+                                    class="btn purple optionBtn"></button></li>
+                            <li class="mb-3"><button id="option3" value="2" type="button"
+                                    class="btn purple optionBtn"></button></li>
+                            <li class="mb-3"><button id="option4" value="3" type="button"
+                                    class="btn purple optionBtn"></button></li>
                         </ul>
                         <div id="show-answer" class="show-answer">
                             <hr>
@@ -66,13 +66,13 @@
             <!-- Section for Final Score and Name -->
             <section id="final-page" class = "final-page">
                 <div class="row">
-                    <div class=""></div>
-                    <div class="">
+                    <div class="col-3"></div>
+                    <div class="col-6">
                         <h2>All done!</h2>
                         <p>Your final score is: <span id="final-score"></span></p>
                         <!-- <p class="score">Your final score is: </p> -->
                         <p>Enter initials:<input placeholder="initials" id="initials" /></span>
-                            <button id="submit-score" class="">Submit</button>
+                            <button id="submit-score" class="btn mx-1 my-1 d-inline-block purple">Submit</button>
                         </p>
                     </div>
                 </div>
@@ -80,14 +80,16 @@
 
             <!-- Section for High Scores -->
             <section id="high-scores-page" class = "high-scores-page">
-                <div class="">
-                    <div class=""></div>
-                    <div class="">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
                             <h2>High Scores</h2>
                             <!-- High scores should be added as a sorted desc list -->
-                            <ol id="high-scores-list"></ol>
-                            <button id="" class="">Restart</button>
-                            <button id="" class="">Clear scores</button>
+                            <ol id="high-scores-list">
+                                <!-- <li></li> -->
+                            </ol>
+                            <button id="restart" class="btn d-inline-block mx-1 my-1 purple">Restart</button>
+                            <button id="clear-scores" class="btn mx-1 my-1 d-inline-block purple">Clear scores</button>
                     </div>
                 </div>
             </section>
@@ -98,6 +100,14 @@
 
     <!-- Javascript  -->
     <script src="script.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 </html>

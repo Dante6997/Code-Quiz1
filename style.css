@@ -1,0 +1,42 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.purple{
+    background-color: #2e2c8d;
+    color: #FFF;
+}
+
+.purple:hover{
+    color: #FFF;
+}
+
+.all-questions,
+.final-page,
+.high-scores-page,
+.show-answer {
+    display: none;  
+  } 
+
+  .show-answer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+  }
+
+ul li{
+list-style: none;
+}
+
+.optionBtn,
+.optionBtn:hover,
+.optionBtn:active,
+.optionBtn:focus,
+.optionBtn:active:focus {
+    box-shadow: none;
+    outline: none;
+    background-color: #2e2c8d;
+}

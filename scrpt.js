@@ -54,7 +54,7 @@ const questions = [
         options: ["1. Cocunut Shell Stand", "2. Count Suit Season", "3. Cascade Sounding Stocks", "4. Cascading Style Sheet"],
         correctOption: "3"
     }
-;
+];
 
 function setTime() {
     let timerInterval = setInterval(function () {
